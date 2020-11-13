@@ -1,0 +1,33 @@
+{
+    "name": "khodemobin/gitlab-api",
+    "version": "1.0",
+    "description": "A Laravel package for working with gitlab api",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mobin Yazdanparast",
+            "email": "mobinyazdanparast9@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0.1"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "phpunit/phpunit": "^6.0",
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Khodemobin\\Gitlab\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Khodemobin\\Gitlab\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
